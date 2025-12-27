@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/78007cbc32.js" crossorigin="anonymous"></script>
+    <style>
+        .header{
+            background-color: rgb(255, 255, 255);
+            height: 50px;
+            display: flex;
+        }
+        .logo{
+            margin: 5px;
+        }
+        .search-bar input{
+            width: 300px;
+            margin : 10px 90px;
+            margin-left: 0px;
+            height: 25px;
+        }
+        .search{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(255, 253, 129);
+            margin-top: 10px;
+            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:1px solid black ;
+            
+
+        }
+        .icon{
+            display: flex;
+            padding-left: 50px;
+            align-items: center;
+            justify-content: space-around;
+            background-color:rgb(255, 255, 255);
+            padding-top: 2px;
+            font-size: 15px;
+        }
+        .icon img{
+            
+            height: 15px;
+        }
+        .login{
+            margin: 50px;
+
+        }
+        .cart{margin-left: 50px;
+        }
+        .seller{margin-left: 50px;
+        }
+        .dote{margin-left: 50px;
+        }
+
+         .navbar{
+            height: 200px;
+            margin-top: 10px;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .img1{
+            width: 150px;
+            height: 180px;
+            margin-left: 82px;
+            background-color: rgb(255, 255, 255);
+        }
+        .img1 img{
+            width: 100px;
+            height: 100px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            
+        }
+        .scrolimg{
+            height: 220px;
+            background-image: url(https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/b1317a13ec02a499.jpg?q=60);
+            background-size: contain;
+            background-repeat: no-repeat;margin-top: 10px;
+        }
+
+
+         body{
+            background-color: rgb(240, 240, 240);
+        }
+        .manbar{
+            height: 350px;
+            display: flex;
+            background-color: rgb(240, 240, 240);
+        }
+        .manbar1{
+            width: 80%;
+            height: 325px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: rgb(255, 255, 255);
+        }
+        .manbar2{
+            width: 20%;
+            height: 325px;
+            margin-right: 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            background-color: rgb(255, 255, 255);
+            background-size: cover;
+        }
+        .manbar2 img{
+            height: 315px;
+            padding-top: 5px;
+            width: 230px;
+        }
+        .manbar4{
+            display: flex;
+            height: 320px;
+            margin-top: 20px;
+        }
+        .manbar5{
+            height: 250px;
+            width: 200px;
+            margin-left:5px ;
+            background-color: rgb(254, 254, 254);
+            margin-right: 5px;
+        }
+        .manbar5 img{
+            height: 190px;
+            width: 170px;
+            margin-left: 11px;
+            margin-right: 10px;
+        }
+        .manbar3{
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+            
+            
+        }
+        .manbar3 h4{
+            margin-top: 0%;
+        }
+
+         .manbar{
+            height: 335px;
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: rgb(240, 240, 240)
+        }
+        .manbar1{
+            width: 80%;
+            height: 335px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 5px;
+            background-color: rgb(255, 255, 255);
+        }
+        .manbar2{
+            width: 20%;
+            height: 335px;
+            margin-top:0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            background-color: rgb(116, 83, 83);
+            background-image: url(https://rukminim2.flixcart.com/fk-p-flap/1060/1620/image/ce3cf81edb760559.jpg?q=60);
+            background-size: cover;
+        }
+        .manbar4{
+            display: flex;
+            height: 320px;
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 0px;
+        }
+        .manbar5{
+            height: 250px;
+            width: 200px;
+            margin-left:5px ;
+            background-color: rgb(255, 255, 255);
+            margin-right: 5px;
+        }
+        .manbar6{
+            height: 250px;
+            width: 200px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: rgb(255, 255, 255);
+        }
+        .manbar6 img{
+            height: 190px;
+            width: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 26px;
+            padding-right: 26px;
+        }
+        .manbar5 img{
+            height: 190px;
+            width: 170px;
+            margin-left: 11px;
+            margin-right: 10px;
+        }
+        .manbar3{
+            height: 20px;
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: rgb(255, 255, 255);
+            
+            
+        }
+        .manbar3 h4{
+            margin-top: 0%;
+        }
+        .mantwo{
+            width: 100%;
+            height: 590px;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+        .mantwo1{
+            background-color: rgb(255, 255, 255);
+            width: 33%;
+            height: 470px;
+            margin-top: 10px;
+            margin-left: 0px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            
+
+        }
+        .mantwo2{
+            background-color: rgb(255, 255, 255);
+            padding-left: 0%;
+            padding-top: 0%;
+            margin-top: 0%;
+            margin-left: 0%;
+
+        }
+        .mantwo3{
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+        }
+        .mantwo4{
+            background-color: rgb(255, 255, 255);
+            height: 210px;
+            width: 150px;
+            margin: 20px;
+
+        }
+         .mantwo4 img{
+            width: 130px;
+            height: 150px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .mantwo5{
+            width: 33%;
+            height: 470px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            
+            
+            margin: 10px;
+        }
+        .mantwo7{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color: rgb(255, 255, 255);
+        }
+        .mantwo8{
+            width: 150px;
+            height: 210px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+
+        }
+        .mantwo8 img{
+            width: 130px;
+            height: 150px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .mantwo9{
+            width: 33%;
+            height: 470px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 0px;
+            
+            
+        }
+        .mantwo9 img{
+            width: 100%;
+            height: 568px;
+            margin-bottom: 10px;
+        }
+       
+        span{
+            color: green;
+        }
+        .manthree{
+            height: 250px;
+            background-image: url(https://rukminim2.flixcart.com/fk-p-flap/3200/700/image/b0a88a67304dcdee.jpg?q=60);
+            background-size: cover;
+        }
+        .manfor{
+            height: 250px;
+            display: flex;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .manfor1{
+            height: 250px;
+            width: 33%;
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+       
+        .manfor1 img{
+            height: 250px;
+            width: 406px;
+          
+        }
+
+         .manfive{
+            height: 250px;
+            display: flex;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .manfive1{
+            height: 250px;
+            width: 33%;
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+       
+        .manfive1 img{
+            height: 250px;
+            width: 406px;
+          
+        }
+
+
+
+        .footer{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            margin-top: 10px;
+            
+        }
+        .footerone{
+            width:50% ;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        .footerone1{
+            height: 300px;
+            width: 25%;
+            background-color: rgb(0, 0, 0);
+            
+            color: white;
+        }
+        .footerone2{
+             height: 300px;
+            width: 48%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        p{
+            color: rgb(87,87,87);
+        }
+        .image{
+            width: 220px;
+            height: 50px;
+            display: flex;
+            background-color: rgb(0, 0, 0);
+        }
+        .image1{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+        }
+        .img2{
+            width: 30px;
+            height: 30px;
+        }
+        .p1{
+            color: blue;
+        }
+        .p2{
+            color: white;
+        }
+       
+
+
+
+    </style>
+</head>
+<body>
+     <div class="header">
+        <div class="logo"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt=""></div>
+        <duv class="search"><i class="fa-solid fa-magnifying-glass"></i></duv>
+        <div class="search-bar"><input type="text" placeholder="search"></div>
+        <div class="icon">
+            <div class="login"><i class="fa-solid fa-user"></i>Login^</div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i>Cart</div>
+            <div class="seller"><i class="fa-solid fa-shop"></i>Become a seller</div>
+            <div class="dote"> <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="img1"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" alt=""><br><br><center>mintus</center></div>
+        <div class="img1"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt=""><center><br>Mobiles &<br>Tablets</center></div>
+        <div class="img1"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" alt=""><center><br>TVs & <br>Appliances</center></div>
+        <div class="img1"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" alt=""><center><br>Flight<br>Bookings</center></div>
+        <div class="img1"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e730a834ad950bae.png?q=100" alt=""><center><br>Grocery</center></div>
+    </div>
+    <div class="scrolimg"></div>
+
+
+     <div class="manbar">
+        <div class="manbar1">
+            <div class="manbar3"><h4>Top Deals</h4></div>
+            <div class="manbar4">
+                <div class="manbar5"><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/projector/4/x/3/atom-3x-native-fhd-1080p-4k-support-13-0-android-projector-300-original-imahbxepqgqurfh7.jpeg?q=60" alt=""><center><br>Projector<br>From 6990</center></div>
+                <div class="manbar6"><img src="https://rukminim2.flixcart.com/image/240/240/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60" alt=""><center><br>Best Selling Mobil S...<br>From 499*</center></div>
+                <div class="manbar5"><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/u/m/b/-original-imah8rcwxbyk3nft.jpeg?q=60" alt=""><center><br>Monitors<br>From 6599</center></div>
+                <div class="manbar5"><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/w/i/f/-original-imahagy2cefszqgy.jpeg?q=60" alt=""><center><br>monitor<br>From 8279</center></div>
+                <div class="manbar5"><img src="https://rukminim2.flixcart.com/image/240/240/xif0q/dslr-camera/o/5/9/autofocus-16x-digital-zoom-rechargeable-camera-48-4k-ultra-hd-original-imahcy7gnjqpdqum.jpeg?q=60" alt=""><center><br>Top Mirrorless Came<br>Shop now!</center></div>
+            </div>
+        </div>
+        <div class="manbar2"><img src="https://rukminim2.flixcart.com/fk-p-flap/1060/1620/image/ce3cf81edb760559.jpg?q=60" alt=""></div>
+        
+        
+    </div>
+
+    <div class="mantwo">
+        <div class="mantwo1"><h2>Fashion's Top Deals</h2>
+            <div class="mantwo2"></div>
+            <div class="mantwo3">
+                <div class="mantwo4"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/massage-chair/z/g/w/mz24-zero-gravity-3d-full-body-home-massager-with-bluetooth-original-imagx7kcdkgdmjbc.jpeg?q=60" alt=""><br>Massage Chairs<br><span>Min 50% Off</span></div>
+                <div class="mantwo4"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/home-temple/s/x/d/t1white-hoodwin-original-imah99vgphekyteg.jpeg?q=60" alt=""><br>Home Temple<br><span>Min 50% Off</span></div>
+                <div class="mantwo4"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/shopsy-collapsible-wardrobe/y/6/i/280-carbon-steel-570-1-4-at-4-firozi-attache-firozi-730-original-imahek4qcjkjzuvh.jpeg?q=60" alt=""><br>Collapsible wardr...<br><span>Min 50% Off</span></div>
+                <div class="mantwo4"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/shoe-rack/d/7/k/5-12-0-4-black-6-plexus-enterprises-black-5-original-imahgbafmytzbzbh.jpeg?q=60" alt=""><br>Shoe Rack<br><span>Min 50% Off</span></div>
+            </div>
+        </div>
+        <div class="mantwo5"><h2>Make your home stylish</h2>
+            <div class="mantwo6"></div>
+            <div class="mantwo7">
+                <div class="mantwo8"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/shoe/q/w/y/6-rng-854-grey-40-bruton-grey-original-imahbhzs8zgnexrz.jpeg?q=60" alt=""><br>Men's Sports Sho...<br><span>Min. 70% Off</span></div>
+                <div class="mantwo8"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/slipper-flip-flop/n/q/h/6-213-blue-06-arotek-blue-original-imah7fyzexvmjg7g.jpeg?q=60" alt=""><br>Men's Slippers &...<br><span>Min. 70% Off</span></div>
+                <div class="mantwo8"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/watch/r/p/v/1-2212-rls-boys-girls-original-imahhe6s7hrbhhx9.jpeg?q=60" alt=""><br>Wrist Watches<br><span>Min. 90% Off</span></div>
+                <div class="mantwo8"><img src="https://rukminim2.flixcart.com/image/420/420/xif0q/shopsy-sandal/y/y/p/8-vy-ss-555-shokiya-pink-original-imahc5gndm6h4jhy.jpeg?q=60" alt=""><br>Women's Flats<br><span>Min. 50% Off</span></div>
+
+            </div>
+        </div>
+        <div class="mantwo9"><img src="https://rukminim2.flixcart.com/www/1060/1560/promos/26/09/2023/6c3c5fe2-c236-4fa2-8d97-595e1e01da01.jpg?q=60" alt=""></div>
+     
+    </div>
+
+
+    <div class="manthree"></div>
+
+    <div class="manfor">
+        <div class="manfor1"><img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/ea971de256af1590.jpg?q=60" alt=""></div>
+        <div class="manfor1"><img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/8f3eba1dc4ec2b2b.jpg?q=60" alt=""></div>
+        <div class="manfor1"><img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/56f0415c81834fab.jpg?q=60" alt=""></div>
+    </div>
+
+
+     <div class="manfive">
+        <div class="manfive1"><img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/b362542381d031e6.jpg?q=60" alt=""></div>
+        <div class="manfive1"><img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/5a2e5762c9c37021.jpg?q=60" alt=""></div>
+        <div class="manfive1"><img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/2367d3a65a86bdd7.jpg?q=60" alt=""></div>
+    </div>
+
+
+     <div class="footer">
+        <div class="footerone">
+            <div class="footerone1"><br><p>ABOUT</p>Contact Us<br>About Us<br>Careers<br>Flipkart Stories<br>Press<br>Corporate Information</div>
+            <div class="footerone1"><br><p>GROUP COMPANIES</p>Myntra<br>Cleartrip<br>Shopsy</div>
+            <div class="footerone1"><br><p>HELP</p>Payments<br>Shipping<br>Cancellation &<br>Returns<br>FAQ</div>
+            <div class="footerone1"><br><p>CONSUMER POLICY</p>Cancellation &<br>Returns<br>Terms Of Use<br>Security<br>Privacy<br>Sitemap<br>Grievance Redressal<br>EPR  Compliance</div>
+        </div>
+        <hr>
+        <div class="footerone">
+            <div class="footerone2"><br><p>Mail Us:</p>Flipkart Internet Private Limited,<br>Buildings Alyssa Begonia &<br>Clove Embassy Tech Village,<br>Outer Ring Road, Devarabeesanaballi Village<br>Bengalara, 560103,<br>Karnataka, India<br><br>Social:
+            <div class="image">
+                <div class="image1"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyLjkzMzEgMjFDMTcuOTAzNyAyMSAyMS45MzMxIDE2Ljk3MDYgMjEuOTMzMSAxMkMyMS45MzMxIDcuMDI5NDQgMTcuOTAzNyAzIDEyLjkzMzEgM0M3Ljk2MjU0IDMgMy45MzMxMSA3LjAyOTQ0IDMuOTMzMTEgMTJDMy45MzMxMSAxNi45NzA2IDcuOTYyNTQgMjEgMTIuOTMzMSAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE2LjY4MzEgOC4yNUgxNS4xODMxQzE0LjU4NjQgOC4yNSAxNC4wMTQxIDguNDg3MDUgMTMuNTkyMSA4LjkwOTAxQzEzLjE3MDIgOS4zMzA5NyAxMi45MzMxIDkuOTAzMjYgMTIuOTMzMSAxMC41VjIxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05LjkzMzExIDEzLjVIMTUuOTMzMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" class="img2"></div>
+                <div class="image1"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE4M18yMCkiPgo8cGF0aCBkPSJNMTMuNTQzNiAxMC42MTc5TDIwLjA5NzEgM0gxOC41NDQxTDEyLjg1MzcgOS42MTQ0OEw4LjMwODg3IDNIMy4wNjY4OUw5LjkzOTY0IDEzLjAwMjNMMy4wNjY4OSAyMC45OTA4SDQuNjE5OTRMMTAuNjI5MSAxNC4wMDU2TDE1LjQyODggMjAuOTkwOEgyMC42NzA4TDEzLjU0MzIgMTAuNjE3OUgxMy41NDM2Wk0xMS40MTY1IDEzLjA5MDRMMTAuNzIwMiAxMi4wOTQ0TDUuMTc5NTMgNC4xNjkxMUg3LjU2NDkxTDEyLjAzNjMgMTAuNTY1MUwxMi43MzI2IDExLjU2MTFMMTguNTQ0OCAxOS44NzQ4SDE2LjE1OTVMMTEuNDE2NSAxMy4wOTA4VjEzLjA5MDRaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE4M18yMCI+CjxyZWN0IHg9IjMuMDY2ODkiIHk9IjMiIHdpZHRoPSIxNy42MDM5IiBoZWlnaHQ9IjE4IiByeD0iMC4yIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" class="img2"></div>
+                <div class="image1"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/YoutubeLogo-8425c4.svg" class="img2"></div>
+                <div class="image1"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/InstagramLogo-43f906.svg" class="img2"></div>
+            </div>
+            </div>
+            <div class="footerone2"><br><p>Registered Office Address:</p>Flipkart Internet Private Limited,<br>Buildings Algssa, Begonia &<br>Clove Embassy Tech Village,<br>Outer Ring Road, Devarbeesanahalli Village,<br>Bengaluru, 560103,<br>Karnataka, India<br>CIN: Usll09KA2012PTC066107<br><pre>Telephone:<p class="p1">044-45614700/044-67415800</p></pre></div>
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
